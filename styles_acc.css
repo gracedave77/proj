@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+.navbar span {
+    font-family: "Alike Angular", serif;
+}
+
+.navbar a {
+    font-family: "Alike Angular", serif;
+}
+
+body {
+    background: #eee;
+}
+
+body {
+    background: #eee;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ddd;
+    padding: 0 40px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 90px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    nav {
+        flex: 1;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 11px;
+        margin: 0 8px;
+        white-space: nowrap;
+    }
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 90px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+}
+
+/* HERO */
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.hero img {
+    filter: blur(2px);
+}
+.welcome-text {
+    position: absolute;
+    top: 20%;
+    right: 8%;
+    text-align: center;
+    font-size: larger;
+}
+@media (max-width: 768px) {
+    .welcome-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        top: 10%;   
+    }
+}
+
+/* LOGIN BOX */
+.sign-in {
+    position: absolute;
+    top: 40%;
+    right: 8%;
+    width: 320px;
+    padding: 20px;
+    background: rgba(176, 210, 230, 0.85);
+    border-radius: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    
+}
+
+.sign-in button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background: #6c8cd5;
+    color: white;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .welcome-text {
+        top: 10%;
+        right: 5%;
+    }
+
+    .sign-in {
+        top: 35%;
+        right: 5%;
+        width: 90%;
+    }
+}
